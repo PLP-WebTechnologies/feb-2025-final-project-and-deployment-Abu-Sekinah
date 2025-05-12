@@ -1,0 +1,227 @@
+/* Products page specific styles */
+
+.products-section {
+  padding-bottom: var(--spacing-16);
+}
+
+/* Filters */
+.products-filters {
+  margin-bottom: var(--spacing-8);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-4);
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.filter-group label {
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+}
+
+.filter-group select {
+  padding: var(--spacing-2) var(--spacing-4);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.products-search-form {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.products-search-form input {
+  width: 100%;
+  padding: var(--spacing-2) var(--spacing-4);
+  padding-right: 40px;
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--border-radius-md);
+}
+
+.products-search-form button {
+  position: absolute;
+  right: var(--spacing-2);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-gray-500);
+  cursor: pointer;
+}
+
+.products-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-4);
+}
+
+.product-count {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+}
+
+/* Products grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-6);
+}
+
+.product-card {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.product-card.out-of-stock {
+  opacity: 0.7;
+}
+
+.product-card.out-of-stock .add-to-cart {
+  background-color: var(--color-gray-400);
+  cursor: not-allowed;
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: var(--spacing-4);
+  flex-grow: 1;
+}
+
+.product-info h3 {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-2);
+}
+
+.product-category {
+  color: var(--color-gray-500);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-2);
+  text-transform: capitalize;
+}
+
+.product-price {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-900);
+  font-size: var(--font-size-lg);
+}
+
+.product-actions {
+  padding: 0 var(--spacing-4) var(--spacing-4);
+}
+
+.product-actions .btn {
+  width: 100%;
+}
+
+/* Empty state */
+.no-products {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--spacing-8);
+  background-color: var(--color-gray-100);
+  border-radius: var(--border-radius-lg);
+}
+
+.no-products p {
+  margin-bottom: var(--spacing-4);
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-600);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .products-filters {
+    flex-direction: column;
+  }
+  
+  .filter-options {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-search-form {
+    max-width: 100%;
+  }
+  
+  .filter-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .filter-group {
+    width: 100%;
+  }
+  
+  .filter-group select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .product-actions {
+    padding-top: var(--spacing-2);
+  }
+}
