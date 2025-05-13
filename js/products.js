@@ -12,7 +12,7 @@ const productsData = [
     category: "smartphones",
     price: 999.99,
     description: "Our flagship smartphone with a stunning 6.7-inch Super Retina display, advanced camera system, and all-day battery life.",
-    image: "../assets/product-imgs/pexels-photo-1647976.jpeg",
+    image: "../assets/product-imgs/pexels-photo-1647976.jpg",
     details: {
       display: "6.7-inch Super Retina XDR display",
       processor: "A16 Bionic chip",
@@ -30,7 +30,7 @@ const productsData = [
     category: "laptops",
     price: 1799.99,
     description: "Powerful laptop for creative professionals with Retina display, high-performance processor and graphics.",
-    image: "../assets/product-imgs/2.jpeg",
+    image: "../assets/product-imgs/2.jpg",
     details: {
       display: "16-inch Liquid Retina XDR display",
       processor: "M2 Pro or M2 Max chip",
@@ -48,7 +48,7 @@ const productsData = [
     category: "accessories",
     price: 249.99,
     description: "Immersive sound with active noise cancellation and adaptive EQ that automatically tunes music to your ears.",
-    image: "../assets/product-imgs/3.jpeg",
+    image: "../assets/product-imgs/3.jpg",
     details: {
       audio: "Active Noise Cancellation and Transparency mode",
       battery: "Up to 6 hours of listening time with one charge",
@@ -66,7 +66,7 @@ const productsData = [
     category: "tablets",
     price: 799.99,
     description: "Powerful tablet with edge-to-edge Liquid Retina display and pro-level performance.",
-    image: "../assets/product-imgs/4.jpeg",
+    image: "../assets/product-imgs/4.jpg",
     details: {
       display: "11-inch Liquid Retina display",
       processor: "M2 chip",
@@ -84,7 +84,7 @@ const productsData = [
     category: "accessories",
     price: 399.99,
     description: "Advanced health and fitness features including temperature sensing and Crash Detection.",
-    image: "../assets/product-imgs/5.jpeg",
+    image: "../assets/product-imgs/5.jpg",
     details: {
       display: "Always-On Retina LTPO OLED display",
       health: "Temperature sensing, Blood Oxygen app, ECG app",
@@ -102,7 +102,7 @@ const productsData = [
     category: "smartphones",
     price: 499.99,
     description: "Feature-packed smartphone with great camera, battery life, and performance at an affordable price.",
-    image: "../assets/product-imgs/6.jpeg",
+    image: "../assets/product-imgs/6.jpg",
     details: {
       display: "6.1-inch Super Retina XDR display",
       processor: "A15 Bionic chip",
@@ -138,7 +138,7 @@ const productsData = [
     category: "accessories",
     price: 39.99,
     description: "Fast wireless charging for compatible smartphones and earbuds.",
-    image: "../assets/product-imgs/8.jpeg",
+    image: "../assets/product-imgs/8.jpg",
     details: {
       power: "15W fast charging",
       compatibility: "Works with Qi-certified devices",
